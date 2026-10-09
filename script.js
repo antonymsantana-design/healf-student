@@ -19,10 +19,15 @@ createCard();
 
 
 const btn = document.getElementById("btn")
+const a = document.getElementById("a")
 
 btn.addEventListener("onclick", function () {
     const drm = document.querySelectorAll(".drm").value
     const ps = document.querySelectorAll(".ps").value
     const fs = document.querySelectorAll(".fs").value
     const cl = document.querySelectorAll(".cl").value
+
+    if (drm === "sim" && ps === "sim" && fs === "sim" && cl === "sim") {
+        
+    }
 })
