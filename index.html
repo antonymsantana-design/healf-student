@@ -26,43 +26,13 @@
                 <p class="intro">Dormir bem, comer bem, fazer pausas e se movimentar ajudam você a ter mais
                     concentração, energia e disposição. Pequenos hábitos todos os dias fazem uma grande diferença no
                     seu aprendizado.</p>
-                <a href="#teste" class="botao">Fazer o teste</a>
             </div>
 
         </section>
 
         <section id="dicas">
             <h2>Dicas para o dia a dia</h2>
-            <div class="cards">
-                <article class="card sono">
-                    <span class="icone">😴</span>
-                    <h3>Sono</h3>
-                    <p>Dormir de 7 a 9 horas melhora a concentração e a memória.</p>
-                </article>
-
-                <article class="card alimentacao">
-                    <span class="icone">🥗</span>
-                    <h3>Alimentação</h3>
-                    <p>Refeições equilibradas ajudam na energia durante o dia.</p>
-                </article>
-
-                <article class="card estudo">
-                    <span class="icone">📚</span>
-                    <h3>Estudo</h3>
-                    <p>Pequenas pausas entre as atividades ajudam no aprendizado.</p>
-                </article>
-
-                <article class="card tecnologia">
-                    <span class="icone">📱</span>
-                    <h3>Tecnologia</h3>
-                    <p>Evite o excesso de tela antes de dormir.</p>
-                </article>
-
-                <article class="card exercicio">
-                    <span class="icone">🏃</span>
-                    <h3>Atividade física</h3>
-                    <p>Movimentar o corpo ajuda na disposição e no humor.</p>
-                </article>
+            <div class="cards" id="cards">
             </div>
         </section>
 
@@ -73,11 +43,33 @@
             <form>
                 <fieldset>
                     <legend>Meu checklist</legend>
-                    <label><input type="checkbox"> Durmo pelo menos 7 horas por noite</label>
-                    <label><input type="checkbox"> Faço pausas durante os estudos</label>
-                    <label><input type="checkbox"> Pratico alguma atividade física</label>
-                    <label><input type="checkbox"> Evito usar o celular antes de dormir</label>
+
+                    <label for="drm">Você dorme pelo menos 7 horas por noite?
+                    </label>
+                    <input type="radio" name="drm" id="drm" value="sim">
+                    <input type="radio" name="drm" id="drm" value="não">
+
+                    <label for="ps">Você faz pausas durante os estudos?
+
+                    </label>
+                    <input type="radio" name="ps" id="ps" value="sim">
+                    <input type="radio" name="ps" id="ps" value="não">
+
+                    <label for="fs">Você pratica alguma atividade física?
+
+                    </label>
+                    <input type="radio" name="fs" id="fs" value="sim">
+                    <input type="radio" name="fs" id="fs" value="não">
+
+                    <label for="cl">Você evita usar celular antes de dormir?
+
+                    </label>
+                    <input type="radio" name="cl" id="cl" value="sim">
+                    <input type="radio" name="cl" id="cl" value="não">
+
                 </fieldset>
+
+                <button id="btn"></button>
             </form>
 
             <h3>Como ler o resultado</h3>
@@ -92,7 +84,7 @@
     <a href="#inicio" class="topo" aria-label="Voltar ao topo">↑</a>
 
     <footer>
-        Vida de Estudante — Pequenos hábitos, grandes resultados 
+        Vida de Estudante — Pequenos hábitos, grandes resultados
     </footer>
 </body>
 
