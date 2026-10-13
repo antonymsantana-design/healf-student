@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
-
 
 body {
     margin: 0;
@@ -75,6 +75,20 @@ h2 {
     margin-bottom: 1.5rem;
 }
 
+.btn{
+    width: 150px;
+    height: 35px;
+    border-radius: 5px;
+    color: white;
+    background-color: #00995d;
+    border: none;
+    transition: 0.3s ease;
+}
+
+.btn:hover{
+    transform:translateY(-1px);
+}
+
 .ilustracao {
     width: 220px;
 }
@@ -94,6 +108,22 @@ h2 {
     background: #004a8d;
     transition: 0.2s;
 }
+
+fieldset p {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+label {
+    gap: 5px;
+    margin: 0 15px 15px 0;
+    cursor: pointer;
+}
+
+fieldset input {
+    cursor: pointer;
+}
+
 
 .cards {
     display: grid;

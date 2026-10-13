@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vida de Estudante: Guia de Hábitos Saudáveis</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <span class="logo">Vida de Estudante</span>
+            <a href="#inicio">Início</a>
+            <a href="#dicas">Dicas</a>
+            <a href="#teste">Teste de Hábitos</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="abertura">
+            <div class="abertura-texto">
+                <h1>Cuide da sua rotina, melhore seus estudos</h1>
+                <p class="intro">Dormir bem, comer bem, fazer pausas e se movimentar ajudam você a ter mais
+                    concentração, energia e disposição. Pequenos hábitos todos os dias fazem uma grande diferença no
+                    seu aprendizado.</p>
+            </div>
+
+        </section>
+
+        <section id="dicas">
+            <h2>Dicas para o dia a dia</h2>
+            <div class="cards" id="cards">
+            </div>
+        </section>
+
+        <section id="teste" class="projeto">
+            <h2>Teste de Hábitos</h2>
+            <p>Marque os hábitos que você já pratica e veja o que ainda pode melhorar.</p>
+
+            <form>
+                <fieldset>
+                    <legend>Meu checklist</legend>
+
+                    <label for="drm">Você dorme pelo menos 7 horas por noite?
+                    </label>
+                    <input type="radio" name="drm" id="drm" value="sim" placeholder="Sim">
+                    <input type="radio" name="drm" id="drm" value="não" placeholder="Não">
+
+                    <label for="ps">Você faz pausas durante os estudos?
+
+                    </label>
+                    <input type="radio" name="ps" id="ps" value="sim"placeholder="Sim">
+                    <input type="radio" name="ps" id="ps" value="não"placeholder="Sim">
+
+                    <label for="fs">Você pratica alguma atividade física?
+
+                    </label>
+                    <input type="radio" name="fs" id="fs" value="sim"placeholder="Sim">
+                    <input type="radio" name="fs" id="fs" value="não"placeholder="Sim">
+
+                    <label for="cl">Você evita usar celular antes de dormir?
+
+                    </label>
+                    <input type="radio" name="cl" id="cl" value="sim">
+                    <input type="radio" name="cl" id="cl" value="não">
+
+                </fieldset>
+
+                <button id="btn"></button>
+            </form>
+            <p id="a"></p>
+        </section>
+    </main>
+
+    <a href="#inicio" class="topo" aria-label="Voltar ao topo">↑</a>
+
+    <footer>
+        Vida de Estudante — Pequenos hábitos, grandes resultados
+    </footer>
+</body>
+
+</html>
